@@ -12,6 +12,7 @@ class Client:
     def _(self): # shit example
         os.system('cls')
         for entity in self.Memory.getEntities():
+            
             name = entity.getName()
             team = entity.getTeam()
             health = entity.getHealth()
