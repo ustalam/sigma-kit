@@ -56,7 +56,6 @@ class Memory:
         try:
             return self.Handle.read_string(address, size)
         except pymem.exception.MemoryReadError:
-            print('[chuj-sdk] Error reading string')
             return ""
  
     def readRaw(self, address: int, size: int) -> bytes:
